@@ -1,0 +1,196 @@
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.page-title {
+    width: 100vw;
+    text-align: center;
+}
+
+.page-title h3 {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+
+.page-title h1 {
+    font-size: 46px;
+    line-height: 130%;
+    font-weight: 900;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: var(--gray-600);
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.tab-item {
+    padding: 7px;
+}
+
+.all {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 4px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    border: 1px solid var(--gray-600);
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.lupa {
+    position: absolute;
+    z-index: 1;
+    right: 8px;
+    top: 25%;
+}
+
+.coursess {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    position: relative;
+}
+
+.courses-grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lesson {
+    display: inline;
+    width: 100%;
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.card {
+    box-shadow: 0px 4px 4px -4px #1E212C08, 0 12px 10px -6px #9A9CA50A;
+    width: 390px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-content {
+    padding: 40px 30px;
+    line-height: 190%;
+}
+
+.svg_top {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.svg_right {
+    position: absolute;
+    right: 3%;
+    top: 70%;
+}
+
+.svg_left {
+    position: absolute;
+    left: 1.5%;
+    top: 20%;
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    background: #F4F5F6;
+    padding: 70px;
+    position: relative;
+}
+
+.heading {
+    text-align: center;
+    position: relative;
+}
+
+.testimonial {
+    display: flex;
+    width: 1020px;
+    height: 344px;
+    padding: 70px;
+    background: #fff;
+    gap: 20px;
+}
+
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--gray-800);
+}
+
+.user-profile p {
+    color: var(--gray-600);
+}
+
+.user-profile {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.user-profile img {
+    border-radius: 50% 50%;
+}
+
+.svg-head {
+    position: absolute;
+    top: 10px;
+    right: -90px;
+}
+
+
+
+@media (max-width:1024px) {
+    .program{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

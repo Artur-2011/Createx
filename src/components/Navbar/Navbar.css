@@ -1,0 +1,114 @@
+/* Responsive Navbar Styles */
+@media (max-width: 900px) {
+  .navigation-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70vw;
+    height: 100vh;
+    background: var(--white);
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 10000;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.08);
+  }
+  .navigation-menu.open {
+    right: 0;
+  }
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+    margin-left: 20px;
+    z-index: 10001;
+  }
+  .navigation-menu-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navigation-menu a {
+    font-size: 22px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .navigation-menu {
+    display: flex;
+  }
+  .navigation {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 900px) {
+  .navigation-menu {
+    display: none;
+  }
+  .navigation-menu.open {
+    display: flex;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 901px) {
+  .burger-menu {
+    display: none;
+  }
+}
+.header-absolute {
+  width: 100%;
+  padding: 20px var(--inline);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 9999999999999 !important;
+}
+.navigation {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation-menu a {
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+.navigation-menu-buttons button:first-child {
+  background: var(--btn-gradient);
+  color: var(--white);
+  padding: 12.3px 30px;
+  cursor: pointer;
+}
+
+.navigation-menu-buttons button:last-child {
+  padding: 12px 0 12px 30px;
+  background: transparent;
+  color: var(--gray-800);
+  cursor: pointer;
+}
+
+.navigation-menu-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sticky .header-absolute {
+  background: var(--secondary) !important;
+  width: 100%;
+}
