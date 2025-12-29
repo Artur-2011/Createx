@@ -23,6 +23,7 @@ export default function Benefits() {
         <div className="benefits-details">
           <div className="benefits-item">
             <h3>Only practicing tutors</h3>
+            <h1>NightViper</h1>
             <p>
               Uma nisi, arcu cras nunc. Aenean quam est lobortis in non fames
               <br></br> dictum suspendisse. Morbi mauris cras massa dui dolor quis
